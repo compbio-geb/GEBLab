@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GEB Lab · Howard University</title>
+  <meta name="description" content="The Genome Evolution and Bioinformatics Lab at Howard University studies genome evolution, gene regulation and gene essentiality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Menu: the same block is on every page. To add a page, add a <li> on every page. ===== -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">GEB<span>Lab</span></a>
+      <nav aria-label="Main">
+        <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="join.html">Join us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Genome Evolution and Bioinformatics Lab</h1>
+        <p class="lede">We use evolution as a lens on the genome. Comparing genes, regulatory
+        elements and protein structures across species tells us which changes matter, why
+        organisms tolerate so much genetic variation, and how that knowledge can be turned
+        into tools for medicine.</p>
+        <div class="alignment" role="img" aria-label="Illustrative five-species DNA alignment with one variable column highlighted">
+          <div class="row"><span class="sp">Human</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="g">G</span><span class="c">C</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="g">G</span><span class="c">C</span><span class="c">C</span><span class="c">C</span><span class="c hl">C</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="g">G</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span></div>
+          <div class="row"><span class="sp">Chimpanzee</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="g">G</span><span class="c">C</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="g">G</span><span class="c">C</span><span class="c">C</span><span class="c">C</span><span class="c hl">C</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="g">G</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span></div>
+          <div class="row"><span class="sp">Mouse</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="g">G</span><span class="c">C</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="g">G</span><span class="c">C</span><span class="c">C</span><span class="t">T</span><span class="c hl">C</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="g">G</span><span class="a">A</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="c">C</span></div>
+          <div class="row"><span class="sp">Chicken</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="c">C</span><span class="c">C</span><span class="t hl">T</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="a">A</span></div>
+          <div class="row"><span class="sp">Zebrafish</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="g">G</span><span class="c">C</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="c">C</span><span class="a">A</span><span class="a hl">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="g">G</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="c">C</span></div>
+        </div>
+        <p class="caption">Illustrative alignment. The highlighted column is the kind of site we study:
+        a position that differs between species and asks to be explained.</p>
+      </section>
+
+      <h2>What we work on</h2>
+      <div class="themes">
+        <div class="theme">
+          <h3>Gene essentiality</h3>
+          <p>Graph-based deep learning that predicts which genes a cell cannot live without,
+          and which parts of the gene network explain why.</p>
+        </div>
+        <div class="theme">
+          <h3>Gene regulation</h3>
+          <p>Maps of transcription-factor binding, cis-regulatory elements and 3D genome
+          structure that connect noncoding variants to the genes they control.</p>
+        </div>
+        <div class="theme">
+          <h3>Molecular evolution</h3>
+          <p>Genome-scale tests of evolutionary hypotheses: pseudogene function, protein
+          structure space, and compensation behind disease-associated residues.</p>
+        </div>
+      </div>
+      <p style="margin-top:16px"><a href="research.html">More about our research</a></p>
+
+      <h2>News</h2>
+      <ul class="news">
+        <li><time datetime="2026-07">Jul 2026</time><span>Our team joins the Howard University <em>All of Us</em> Data Summer/Fall School, 2026 cohort.</span></li>
+        <li><time datetime="2026-06">Jun 2026</time><span>GRADS-4C seed grant awarded for cloud-based computational genomics.</span></li>
+        <li><time datetime="2026-05">May 2026</time><span>NIH NIGMS R15 award (R15GM165012) funds our work on predicting gene essentiality with variational graph attention networks.</span></li>
+        <li><time datetime="2026-04">Apr 2026</time><span>Talk at the COAS AI-ASCEND Symposium: “Have we solved gene essentiality prediction using deep learning?”</span></li>
+        <li><time datetime="2026-01">Jan 2026</time><span>The expanded registry of candidate cis-regulatory elements is published in <em>Nature</em>.</span></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Genome Evolution and Bioinformatics Lab · Department of Biology, Howard University</span>
+      <span>106 E.E. Just Hall, 415 College St. NW, Washington, DC 20059</span>
+    </div>
+  </footer>
+</body>
+</html>

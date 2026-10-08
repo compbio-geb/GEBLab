@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research · GEB Lab</title>
+  <meta name="description" content="Research in the GEB Lab: gene essentiality, gene regulation, molecular evolution and precision medicine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Menu: the same block is on every page. To add a page, add a <li> on every page. ===== -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">GEB<span>Lab</span></a>
+      <nav aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="join.html">Join us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Research</h1>
+      <div class="prose">
+        <p class="lede">We formulate hypotheses about how genomes evolve, test them with
+        functional genomic data, and build the computational tools that testing requires.</p>
+        <p>Biological data are noisy and biased. Much of our work is about separating real signal
+        from those artifacts, so that conclusions about evolution, gene regulation and disease
+        hold up.</p>
+
+        <h2>Predicting essential genes</h2>
+        <p>Some genes are required for a cell to survive; most are not. We build variational graph
+        attention models that predict gene essentiality from gene networks and protein structure, and
+        identify the functional substructures that drive each prediction. This work is funded by
+        NIH NIGMS (R15GM165012, 2026–2029).</p>
+
+        <h2>Gene regulation and noncoding variants</h2>
+        <p>Most disease-associated variants fall outside genes. We study how transcription factors,
+        cis-regulatory elements and three-dimensional genome structure control gene expression, and use
+        those maps to refine eQTL detection and predict the effects of noncoding variants. This builds on
+        our contributions to ENCODE, EN-TEx, GENCODE and modERN, and on an NIH R03 on 3D genome structure
+        and eQTLs.</p>
+
+        <h2>Molecular evolution at genome scale</h2>
+        <p>We ask classic evolutionary questions with genome-wide data: are human translated pseudogenes
+        functional? How continuous is protein structure space? Why do residues that cause disease in
+        humans appear as the normal amino acid in other species? Our structural evidence supports the
+        compensation hypothesis, in which other changes in the protein neutralize the harmful effect.</p>
+
+        <h2>Genomics for precision medicine</h2>
+        <p>We apply statistical and deep-learning models to human health questions, including
+        sex-specific genetic networks in cancer, chemotherapy resistance, clinical predictors in sickle
+        cell disease, and long COVID, often in collaboration with clinical researchers at Howard.</p>
+
+        <h2>Methods we use</h2>
+        <p>Functional and evolutionary genomics, Bayesian statistics, statistical modeling, graph neural
+        networks and other deep-learning approaches, and cloud computing on NIH resources such as
+        <em>All of Us</em>.</p>
+
+        <h2>Funding</h2>
+        <ul>
+          <li>NIH NIGMS R15GM165012, 2026–2029 (PI: Xu)</li>
+          <li>GRADS-4C Seed Grant, 2026 (PI: Xu)</li>
+          <li>Howard University <em>All of Us</em> Data Summer/Fall School Initiative, 2026</li>
+          <li>NIH Office of the Director R03OD032623, 2021–2022 (PI: Xu)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Genome Evolution and Bioinformatics Lab · Department of Biology, Howard University</span>
+      <span>106 E.E. Just Hall, 415 College St. NW, Washington, DC 20059</span>
+    </div>
+  </footer>
+</body>
+</html>
