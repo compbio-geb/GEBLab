@@ -34,15 +34,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--howard-red); ou
 /* ---------- header / nav ---------- */
 .site-header { border-bottom: 1px solid var(--rule); background: #fff; }
 .site-header .wrap {
-  display: flex; flex-wrap: wrap; align-items: baseline;
+  display: flex; flex-wrap: wrap; align-items: center;
   justify-content: space-between; gap: 8px 24px;
-  padding-top: 14px; padding-bottom: 14px;
+  padding-top: 12px; padding-bottom: 12px;
 }
 .wordmark {
   font-family: var(--serif); font-size: 24px; font-weight: 600;
   color: var(--ink); text-decoration: none; letter-spacing: -0.01em;
 }
-.wordmark span { color: var(--howard-red); }
+.wordmark span span, .wordmark > span:not(.wm-text) { color: var(--howard-red); }
 nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; padding: 0; }
 nav a { color: var(--muted); text-decoration: none; font-size: 15px; padding: 4px 0; }
 nav a:hover { color: var(--ink); }
@@ -62,6 +62,9 @@ p { margin: 0 0 16px; }
 
 /* ---------- home hero: the alignment ---------- */
 .hero { padding: 8px 0 8px; }
+.hero-title { display: flex; align-items: center; gap: 28px; margin-bottom: 16px; }
+.hero-title img { width: 150px; height: 150px; flex: none; }
+.hero-title h1 { margin: 0; text-wrap: balance; }
 .alignment {
   margin: 32px 0 8px;
   font-family: var(--mono); font-size: 15px; line-height: 1.9;
@@ -95,6 +98,7 @@ p { margin: 0 0 16px; }
   display: flex; align-items: center; justify-content: center;
   color: var(--muted); font-size: 13px; text-align: center; padding: 12px; object-fit: cover;
 }
+img.photo { display: block; padding: 0; height: auto; }
 .members { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 4px 32px; }
 .members li { padding: 10px 0; border-bottom: 1px solid var(--rule); }
 .members strong { display: block; }
@@ -117,7 +121,34 @@ p { margin: 0 0 16px; }
 .site-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
 .site-footer .wrap { padding-top: 20px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
 
+/* ---------- logo: Nut's starry arch over the goose of Geb on a DNA helix (images/logo.svg) ---------- */
+.wordmark.brand { display: inline-flex; align-items: center; gap: 10px; line-height: 1; }
+.logo { height: 56px; width: auto; flex: none; }
+
+/* ---------- About the name ---------- */
+.name-note { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px; align-items: center; margin-top: 8px; max-width: 980px; }
+.name-note p { color: var(--muted); }
+.geb-art { width: 100%; height: auto; display: block; }
+@media (max-width: 640px) { .name-note { grid-template-columns: 1fr; gap: 16px; } }
+
+/* ---------- Fun page: one <article class="entry"> per fun thing, newest first ---------- */
+.entry { background: #fff; border: 1px solid var(--rule); border-radius: 8px; padding: 32px; margin-top: 24px; }
+.entry h2 { margin: 0 0 4px; }
+.entry time { color: var(--muted); font-size: 15px; }
+.entry-body { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 40px; align-items: center; margin-top: 24px; }
+.entry-body img.main { width: 100%; height: auto; }
+.entry-body p { color: var(--muted); }
+.sketches { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 16px; }
+.sketches li { text-align: center; font-size: 14px; color: var(--muted); }
+.sketches img { width: 100%; height: 100px; object-fit: contain; background: var(--paper); border-radius: 6px; padding: 10px; margin-bottom: 6px; }
+
 @media (max-width: 640px) {
+  .entry { padding: 20px; }
+  .entry-body { grid-template-columns: 1fr; gap: 20px; }
+  .entry-body img.main { max-width: 220px; }
+  .hero-title { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .hero-title img { width: 110px; height: 110px; }
+  .logo { height: 48px; width: auto; }
   body { font-size: 16px; }
   .pi { grid-template-columns: 1fr; }
   .news li { grid-template-columns: 1fr; gap: 0; }

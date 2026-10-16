@@ -8,13 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- ===== Menu: the same block is on every page. To add a page, add a <li> on every page. ===== -->
   <header class="site-header">
     <div class="wrap">
-      <a class="wordmark" href="index.html">GEB<span>Lab</span></a>
+      <a class="wordmark brand" href="index.html" aria-label="GEB Lab home"><img class="logo" src="images/logo-cartouche.svg" alt="" width="36" height="56"><span class="wm-text">GEB <span>Lab</span></span></a>
       <nav aria-label="Main">
         <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
@@ -22,6 +23,7 @@
         <li><a href="people.html">People</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="fun.html">Fun</a></li>
         <li><a href="join.html">Join us</a></li>
         </ul>
       </nav>
@@ -31,7 +33,10 @@
   <main>
     <div class="wrap">
       <section class="hero">
-        <h1>Genome Evolution and Bioinformatics Lab</h1>
+        <div class="hero-title">
+          <img src="images/logo.svg" alt="GEB Lab logo">
+          <h1>Genome Evolution and Bioinformatics Lab</h1>
+        </div>
         <p class="lede">We use evolution as a lens on the genome. Comparing genes, regulatory
         elements and protein structures across species tells us which changes matter, why
         organisms tolerate so much genetic variation, and how that knowledge can be turned
@@ -75,6 +80,25 @@
         <li><time datetime="2026-04">Apr 2026</time><span>Talk at the COAS AI-ASCEND Symposium: “Have we solved gene essentiality prediction using deep learning?”</span></li>
         <li><time datetime="2026-01">Jan 2026</time><span>The expanded registry of candidate cis-regulatory elements is published in <em>Nature</em>.</span></li>
       </ul>
+      <h2>About the name</h2>
+      <div class="name-note">
+        <img class="geb-art" src="images/geb-and-nut.svg" alt="Drawing of Geb, the earth, lying beneath Nut, the sky"></g>
+  <!-- plants growing from the earth -->
+  <g stroke="#5aa86e" stroke-width="2.4" stroke-linecap="round" fill="#5aa86e">
+    <path d="M205 230 L200 200" fill="none"/><ellipse cx="196" cy="206" rx="6" ry="3" transform="rotate(-35 196 206)"/><ellipse cx="203" cy="214" rx="6" ry="3" transform="rotate(30 203 214)"/>
+    <path d="M250 230 L252 194" fill="none"/><ellipse cx="247" cy="200" rx="6" ry="3" transform="rotate(-40 247 200)"/><ellipse cx="256" cy="209" rx="6" ry="3" transform="rotate(35 256 209)"/>
+    <path d="M295 234 L292 206" fill="none"/><ellipse cx="288" cy="212" rx="6" ry="3" transform="rotate(-35 288 212)"/>
+    <path d="M430 246 L433 222" fill="none"/><ellipse cx="437" cy="228" rx="6" ry="3" transform="rotate(35 437 228)"/>
+  </g>
+</svg>
+        <div>
+          <p>Geb was the ancient Egyptian god of the earth. He was usually shown lying on the ground
+          beneath the arched body of Nut, the sky, with plants growing from his body, and his name was
+          written with the sign of a goose.</p>
+          <p>We study the genome, the ground from which every organism grows. GEB also stands for
+          what we do: Genome Evolution and Bioinformatics.</p>
+        </div>
+      </div>
     </div>
   </main>
 
